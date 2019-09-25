@@ -33,10 +33,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -98,6 +98,22 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Last Name";
             // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.textBox2.Location = new System.Drawing.Point(78, 175);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(168, 29);
+            this.textBox2.TabIndex = 6;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.textBox4.Location = new System.Drawing.Point(78, 114);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(168, 29);
+            this.textBox4.TabIndex = 8;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -107,14 +123,6 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Phone";
             // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBox2.Location = new System.Drawing.Point(78, 175);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 29);
-            this.textBox2.TabIndex = 6;
-            // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -122,14 +130,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(168, 29);
             this.textBox3.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBox4.Location = new System.Drawing.Point(78, 114);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(168, 29);
-            this.textBox4.TabIndex = 8;
             // 
             // listBox1
             // 
@@ -199,7 +199,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(124, 31);
             this.button7.TabIndex = 17;
-            this.button7.Text = "LIST CUSOMTERS";
+            this.button7.Text = "LIST CUSTOMERS";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // Form1
