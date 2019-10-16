@@ -33,10 +33,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.phone_text = new System.Windows.Forms.TextBox();
+            this.lastname_text = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.firstname_text = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -69,10 +69,10 @@
             // 
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.phone_text);
+            this.groupBox1.Controls.Add(this.lastname_text);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.firstname_text);
             this.groupBox1.Location = new System.Drawing.Point(404, 106);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(270, 251);
@@ -98,21 +98,21 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Last Name";
             // 
-            // textBox2
+            // phone_text
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBox2.Location = new System.Drawing.Point(78, 175);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 29);
-            this.textBox2.TabIndex = 6;
+            this.phone_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.phone_text.Location = new System.Drawing.Point(78, 175);
+            this.phone_text.Name = "phone_text";
+            this.phone_text.Size = new System.Drawing.Size(168, 29);
+            this.phone_text.TabIndex = 6;
             // 
-            // textBox4
+            // lastname_text
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBox4.Location = new System.Drawing.Point(78, 114);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(168, 29);
-            this.textBox4.TabIndex = 8;
+            this.lastname_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lastname_text.Location = new System.Drawing.Point(78, 114);
+            this.lastname_text.Name = "lastname_text";
+            this.lastname_text.Size = new System.Drawing.Size(168, 29);
+            this.lastname_text.TabIndex = 8;
             // 
             // label4
             // 
@@ -123,13 +123,13 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Phone";
             // 
-            // textBox3
+            // firstname_text
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBox3.Location = new System.Drawing.Point(77, 53);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(168, 29);
-            this.textBox3.TabIndex = 7;
+            this.firstname_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.firstname_text.Location = new System.Drawing.Point(77, 53);
+            this.firstname_text.Name = "firstname_text";
+            this.firstname_text.Size = new System.Drawing.Size(168, 29);
+            this.firstname_text.TabIndex = 7;
             // 
             // listBox1
             // 
@@ -138,6 +138,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(289, 251);
             this.listBox1.TabIndex = 9;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -156,6 +157,7 @@
             this.button3.TabIndex = 12;
             this.button3.Text = "ADD";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -174,6 +176,7 @@
             this.button4.TabIndex = 14;
             this.button4.Text = "CLEAR";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -183,6 +186,7 @@
             this.button5.TabIndex = 15;
             this.button5.Text = "DELETE";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -192,6 +196,7 @@
             this.button6.TabIndex = 16;
             this.button6.Text = "CLEAR LIST";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -234,10 +239,10 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox phone_text;
+        private System.Windows.Forms.TextBox lastname_text;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox firstname_text;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
