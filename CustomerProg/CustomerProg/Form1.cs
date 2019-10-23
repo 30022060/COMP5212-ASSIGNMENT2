@@ -12,6 +12,7 @@ namespace CustomerProg
 {
     public partial class Form1 : Form
     {
+        Customer c1 = new Customer();
         public Form1()
         {
             InitializeComponent();
@@ -31,11 +32,14 @@ namespace CustomerProg
                 && phone_text.Text != "")
             {
                 MessageBox.Show("New customer has been added.");
-                listBox1.Items.Add("Yes");
+                c1.fName = firstname_text.ToString();
+                c1.lName = lastname_text.ToString();
+                c1.phone = phone_text.ToString();
+                listBox1.Items.Add("|");
             }
             else
             {
-                MessageBox.Show("ERROR. EMPTY TEXTBOX DETECTED.");
+                MessageBox.Show("All textboxes must be filled to continue.");
             }
         }
 
@@ -51,23 +55,7 @@ namespace CustomerProg
 
         private void button5_Click(object sender, EventArgs e) //Delete Button
         {
-            if (listBox1.Items.SelectedIndex == -1)
-            {
-                MessageBox.Show("ERROR. NO DATA HAS BEEN SELECTED");
-            }
-            else
-            {
-                DialogResult result = MessageBox.Show("ARE YOU SURE YOU WANT TO DELETE\nSELECTED DATA?", "WARNING", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
-                {
-                    listBox1.Items.Remove(listBox1.SelectedItem);
-                }
-                else if (result == DialogResult.No)
-                {
 
-                }
-            }
-   
         }
     }
 }

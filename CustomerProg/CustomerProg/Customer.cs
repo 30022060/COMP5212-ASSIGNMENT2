@@ -10,18 +10,22 @@ namespace CustomerProg
     {
         private string FName;
         private string LName;
-        private int Phone;
+        private string Phone;
 
         public string fName { get { return FName; } set { FName = value; } }
         public string lName { get { return LName; } set { LName = value; } }
-        public int phone { get { return Phone; } set { Phone = value; } }
+        public string phone { get { return Phone; } set { Phone = value; } }
 
-        public Customer(string fName, string lName, int phone)
+        public Customer(string fName, string lName, string phone)
         {
             Console.Write("***Customer Object has been Created***");
             FName = fName;
             LName = lName;
             Phone = phone;
+        }
+        public Customer()
+        {
+
         }
         public string GetCustomer()
         {
