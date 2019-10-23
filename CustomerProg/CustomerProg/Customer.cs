@@ -29,7 +29,7 @@ namespace CustomerProg
         }
         public string GetCustomer()
         {
-            return $"First Name: {fName}\nLast Name: {lName}\nPhone Number: {phone}";
+            return $"Full Name: {fName} {lName}  |  Phone Number: {phone}";
         }
     }
 }

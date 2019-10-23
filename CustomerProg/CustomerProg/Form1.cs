@@ -20,9 +20,9 @@ namespace CustomerProg
 
         private void button4_Click(object sender, EventArgs e) //Clear Button
         {
-            firstname_text.Text = string.Empty;
-            lastname_text.Text = string.Empty;
-            phone_text.Text = string.Empty;
+            firstname_text.Clear();
+            lastname_text.Clear();
+            phone_text.Clear();
         }
 
         private void button3_Click(object sender, EventArgs e) //Add Button
@@ -32,10 +32,14 @@ namespace CustomerProg
                 && phone_text.Text != "")
             {
                 MessageBox.Show("New customer has been added.");
-                c1.fName = firstname_text.ToString();
-                c1.lName = lastname_text.ToString();
-                c1.phone = phone_text.ToString();
-                listBox1.Items.Add("|");
+                c1.fName = firstname_text.Text;
+                c1.lName = lastname_text.Text;
+                c1.phone = phone_text.Text;
+                listBox1.Items.Add(c1.GetCustomer());
+
+                firstname_text.Clear();
+                lastname_text.Clear();
+                phone_text.Clear();
             }
             else
             {
@@ -50,7 +54,7 @@ namespace CustomerProg
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e) //Listbox
         {
-            
+            listBox1.HorizontalScrollbar = true;
         }
 
         private void button5_Click(object sender, EventArgs e) //Delete Button
