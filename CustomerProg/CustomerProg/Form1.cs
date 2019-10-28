@@ -13,6 +13,18 @@ namespace CustomerProg
     public partial class Form1 : Form
     {
         Customer c1 = new Customer();
+
+        public static void LoadDB()
+        {
+            List<Customer> CustomerDB = new List<Customer>();
+
+            CustomerDB.Add(new Customer { fn = "Jim", ln = "Smith", ph = "346-2514" });
+            CustomerDB.Add(new Customer { fn = "Jo", ln = "Baker", ph = "346-1263" });
+            CustomerDB.Add(new Customer { fn = "Aimee", ln = "Ellery", ph = "346-3658" });
+            CustomerDB.Add(new Customer { fn = "Sam", ln = "Herewini", ph = "346-9898" });
+
+            
+        }
         public Form1()
         {
             InitializeComponent();
@@ -53,7 +65,7 @@ namespace CustomerProg
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e) //Listbox
         {
-            listBox1.HorizontalScrollbar = true;      
+            listBox1.HorizontalScrollbar = true;
         }
 
         private void button5_Click(object sender, EventArgs e) //Delete Button
