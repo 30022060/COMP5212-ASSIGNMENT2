@@ -6,30 +6,40 @@ using System.Threading.Tasks;
 
 namespace CustomerProg
 {
-    class Customer
+    public class Customer
     {
         private string FName;
         private string LName;
         private string Phone;
 
-        public string fName { get { return FName; } set { FName = value; } }
-        public string lName { get { return LName; } set { LName = value; } }
-        public string phone { get { return Phone; } set { Phone = value; } }
+        public string fn { get { return FName; } set { FName = value; } }
+        public string ln { get { return LName; } set { LName = value; } }
+        public string ph { get { return Phone; } set { Phone = value; } }
 
-        public Customer(string fName, string lName, string phone)
+        public Customer(string fn, string ln, string ph)
         {
-            Console.Write("***Customer Object has been Created***");
-            FName = fName;
-            LName = lName;
-            Phone = phone;
+            FName = fn;
+            LName = ln;
+            Phone = ph;
         }
         public Customer()
         {
 
         }
+        public static void Main()
+        {
+            List<Customer> CustomerDB = new List<Customer>();
+
+            CustomerDB.Add(new Customer { fn = "Jim", ln = "Smith", ph = "346-2514" });
+            CustomerDB.Add(new Customer { fn = "Jo", ln = "Baker", ph = "346-1263" });
+            CustomerDB.Add(new Customer { fn = "Aimee", ln = "Ellery", ph = "346-3658" });
+            CustomerDB.Add(new Customer { fn = "Sam", ln = "Herewini", ph = "346-9898" });
+        }
         public string GetCustomer()
         {
-            return $"Full Name: {fName} {lName}  |  Phone Number: {phone}";
+            return $"Full Name: {fn} {ln}  |  Phone Number: {ph}";
         }
+
     }
+
 }
